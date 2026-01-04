@@ -1,0 +1,32 @@
+package BM23AI185;
+import java.lang.String;
+import java.util.*;
+
+public class Alternate {
+
+    public static void main(String[] args) {
+        StringBuffer s1 = new StringBuffer("Abc");
+        System.out.println("String  is:" + s1);
+        System.out.println("Length:" + s1.length());
+        System.out.println("Capacity:" + s1.capacity());
+
+        System.out.println("Enter a string:");
+        Scanner scan = new Scanner(System.in);
+        String inputString = scan.nextLine();
+        StringBuffer s2 = new StringBuffer(inputString);
+        System.out.println("Reverse:" + s2.reverse());
+        System.out.println("Uppercase of reversed:" + s2.toString().toUpperCase());
+
+        String s11 = "Good";
+        String s22 = "good";
+        boolean a = s11.equals(s22);
+        System.out.println(a);
+        boolean a1 = s11.equalsIgnoreCase(s22);
+        System.out.println(a1);
+        int z = s11.compareTo(s22);
+        System.out.println(z);
+        System.out.println(s11==s22);
+        String x = s11.concat(s22);
+        System.out.println("Concatenated string: " + x);
+    }
+}
